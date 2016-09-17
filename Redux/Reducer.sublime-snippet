@@ -4,11 +4,11 @@ import {
 	${2:Action}
 } from '${3:path}';
 
-const defaultState = {
+const initialState = {
 	${4:prop},
 };
 
-const ${1:Reducer} = (state = defaultState, action = {}) => {
+const ${1:Reducer} = (state = initialState, action = {}) => {
 	switch (action.type) {
 		case ${5:type}:
 			return {
