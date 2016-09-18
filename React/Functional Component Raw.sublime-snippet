@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+const ${1:Component} = ({ className }) => {
+  return (
+    ${2}
+  );
+};
+]]></content>
+<tabTrigger>rfcc</tabTrigger>
+</snippet>
