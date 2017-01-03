@@ -1,0 +1,10 @@
+<snippet>
+  <content><![CDATA[
+const mapStateToProps = ({ ${1:reducer} }) => {
+  return {
+    ${2}
+  }
+}
+]]></content>
+<tabTrigger>rmto</tabTrigger>
+</snippet>
