@@ -1,10 +1,8 @@
 <snippet>
   <content><![CDATA[
-const mapStateToProps = ({ ${1:reducer} }) => {
-  return {
-    ${2}
-  }
-}
+const mapStateToProps = ({ ${1:reducer} }) => ({
+  ${2:key}:${1:reducer},${3}
+});
 ]]></content>
 <tabTrigger>rmst</tabTrigger>
 </snippet>
