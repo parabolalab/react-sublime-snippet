@@ -1,24 +1,25 @@
 <snippet>
 	<content><![CDATA[
-import React, { PropTypes } from 'react';
+import React from 'react'
+import PropTypes from 'prop-types'
 
 class ${1:Component} extends React.Component {
 	static propTypes = {
 		className: PropTypes.string,
 	};
 
-	constructor(props) {
-		super(props);
-	}
+  static defaultProps = {
+    className: '',
+  };
 
 	render() {
 		return (
 			${2}
-		);
+		)
 	}
 }
 
-export default ${1:Component};
+export default ${1:Component}
 
 ]]></content>
 <tabTrigger>rcc</tabTrigger>

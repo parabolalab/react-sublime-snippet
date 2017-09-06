@@ -1,0 +1,27 @@
+<snippet>
+  <content><![CDATA[
+import React from 'react';
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+
+class ${1:Component} extends React.Component {
+  static propTypes = {
+    className: PropTypes.string,
+  };
+
+  render() {
+    return (
+      ${2}
+    );
+  }
+}
+
+const mapStateToProps = ({ ${3:reducer} }) => ({
+  ${3:reducer}${4},
+});
+
+export default connect(mapStateToProps)(${1:Component});
+
+]]></content>
+<tabTrigger>rccr</tabTrigger>
+</snippet>

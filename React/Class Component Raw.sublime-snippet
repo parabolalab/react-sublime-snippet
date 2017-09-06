@@ -5,10 +5,6 @@ class ${1:Component} extends React.Component {
     className: PropTypes.string,
   };
 
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       ${2}

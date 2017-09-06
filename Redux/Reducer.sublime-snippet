@@ -1,26 +1,20 @@
 <snippet>
 	<content><![CDATA[
-import {
-	${2:Action}
-} from '${3:path}';
-
 const initialState = {
-	${4:prop},
-};
+	${3:prop},
+}
 
 const ${1:Reducer} = (state = initialState, action = {}) => {
 	switch (action.type) {
-		case ${5:type}:
+		case ${2:type}:
 			return {
 				...state,
-			};
-
-		default:
-			return state;
+			}
+		default: return state
 	}
-};
+}
 
-export default ${1:Reducer};
+export default ${1:Reducer}
 
 ]]></content>
 <tabTrigger>rrr</tabTrigger>
