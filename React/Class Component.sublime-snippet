@@ -12,11 +12,15 @@ class ${1:Component} extends React.Component {
     className: '',
   };
 
-	render() {
-		return (
-			${2}
-		)
-	}
+  render() {
+    const { className } = this.props
+
+    return (
+      <div className={['${1:component}', className].join(' ').trim()}>
+        ${2}
+      </div>
+    )
+  }
 }
 
 export default ${1:Component}

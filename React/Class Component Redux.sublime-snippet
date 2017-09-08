@@ -1,26 +1,39 @@
 <snippet>
   <content><![CDATA[
-import React from 'react';
-import PropTypes from 'prop-types';
-import { connect } from 'react-redux';
+import React from 'react'
+import PropTypes from 'prop-types'
+import { connect } from 'react-redux'
 
 class ${1:Component} extends React.Component {
   static propTypes = {
     className: PropTypes.string,
   };
 
+  static defaultProps = {
+    className: '',
+  };
+
   render() {
+    const { className } = this.props
+
     return (
-      ${2}
-    );
+      <div className={['${1:component}', className].join(' ').trim()}>
+        ${2}
+      </div>
+    )
   }
 }
 
 const mapStateToProps = ({ ${3:reducer} }) => ({
   ${3:reducer}${4},
-});
+})
 
-export default connect(mapStateToProps)(${1:Component});
+
+const mapDispatchToProps = dispatch => ({
+  ${5:onSubmit}: () => dispatch(${6}),
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(${1:Component})
 
 ]]></content>
 <tabTrigger>rccr</tabTrigger>
